@@ -9,11 +9,8 @@
   <meta name="author" content="kaz080">
 
   
-  <meta name="description" content="最新のOctopressは
-Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。 brew updateしてから入れること。
-rubyをビルドするにはXcodeのllvm-gccではダメで、
-osx-gcc-installer
-でgccを入れる必要がある。 &hellip;">
+  <meta name="description" content="Octopressは、GitHub Pages上にBlogを作っちゃうツール。 最新のOctopressはRubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。
+ところが、Rubyを入れるところで思いがけずハマったので、注意点を。 brew &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,8 +93,10 @@ osx-gcc-installer
 
 <div class="entry-content"><p><img src="https://dl.dropbox.com/u/72827878/octopress.png" alt="Octopress" /></p>
 
-<p>最新の<a href="http://octopress.org">Octopress</a>は
-Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。</p>
+<p><a href="http://octopress.org">Octopress</a>は、GitHub Pages上にBlogを作っちゃうツール。</p>
+
+<p>最新のOctopressはRubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。
+ところが、Rubyを入れるところで思いがけずハマったので、注意点を。</p>
 
 <ul>
 <li>brew updateしてから入れること。</li>
@@ -109,7 +108,7 @@ Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れ
 <li><code>rbenv install 1.9.3-p194</code>で入れた後、<code>rbenv rehash</code>を忘れないこと。
 
 <ul>
-<li>前のバージョンのgemを指したままになってる？</li>
+<li>以前のバージョンのgemを指したままになってる？</li>
 </ul>
 </li>
 </ul>
@@ -117,6 +116,13 @@ Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れ
 
 <p>これからOctopressやJekyllやGitHub Pagesの仕組みを勉強するつもり。
 でもちょっとフォントやレイアウトをいじりたいので、まずはThemeとかSassかなぁ。</p>
+
+<h2>おまけ</h2>
+
+<ul>
+<li><a href="https://dl.dropbox.com/u/72827878/reveal.js/index.html">Reveal.jsの実験</a></li>
+</ul>
+
 </div>
 
 

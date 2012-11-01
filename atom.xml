@@ -4,7 +4,7 @@
   <title><![CDATA[kaz080 Blog]]></title>
   <link href="http://kaz080.github.com/atom.xml" rel="self"/>
   <link href="http://kaz080.github.com/"/>
-  <updated>2012-11-02T01:09:04+09:00</updated>
+  <updated>2012-11-02T01:45:51+09:00</updated>
   <id>http://kaz080.github.com/</id>
   <author>
     <name><![CDATA[kaz080]]></name>
@@ -20,8 +20,10 @@
     <id>http://kaz080.github.com/blog/2012/11/01/octopress</id>
     <content type="html"><![CDATA[<p><img src="https://dl.dropbox.com/u/72827878/octopress.png" alt="Octopress" /></p>
 
-<p>最新の<a href="http://octopress.org">Octopress</a>は
-Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。</p>
+<p><a href="http://octopress.org">Octopress</a>は、GitHub Pages上にBlogを作っちゃうツール。</p>
+
+<p>最新のOctopressはRubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。
+ところが、Rubyを入れるところで思いがけずハマったので、注意点を。</p>
 
 <ul>
 <li>brew updateしてから入れること。</li>
@@ -33,7 +35,7 @@ Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れ
 <li><code>rbenv install 1.9.3-p194</code>で入れた後、<code>rbenv rehash</code>を忘れないこと。
 
 <ul>
-<li>前のバージョンのgemを指したままになってる？</li>
+<li>以前のバージョンのgemを指したままになってる？</li>
 </ul>
 </li>
 </ul>
@@ -41,6 +43,13 @@ Rubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れ
 
 <p>これからOctopressやJekyllやGitHub Pagesの仕組みを勉強するつもり。
 でもちょっとフォントやレイアウトをいじりたいので、まずはThemeとかSassかなぁ。</p>
+
+<h2>おまけ</h2>
+
+<ul>
+<li><a href="https://dl.dropbox.com/u/72827878/reveal.js/index.html">Reveal.jsの実験</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
