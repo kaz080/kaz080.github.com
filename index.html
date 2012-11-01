@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="Octopressは、GitHub Pages上にBlogを作っちゃうツール。 最新のOctopressはRubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。
-ところが、Rubyを入れるところで思いがけずハマったので、注意点を。 brew &hellip;">
+ところが、Rubyを入れるところで思いがけずハマったので、注意点を。 必ずbrew &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -102,19 +102,52 @@
 ところが、Rubyを入れるところで思いがけずハマったので、注意点を。</p>
 
 <ul>
-<li>brew updateしてから入れること。</li>
-<li>rubyをビルドするにはXcodeのllvm-gccではダメで、
-<a href="https://github.com/kennethreitz/osx-gcc-installer">osx-gcc-installer</a>
-でgccを入れる必要がある。</li>
-<li>rbenvを使う場合、rubyのバージョンは、
-<code>.rbenv-version</code>とピッタリ同じものを入れる必要がある？</li>
-<li><code>rbenv install 1.9.3-p194</code>で入れた後、<code>rbenv rehash</code>を忘れないこと。
+<li>必ず<code>brew update</code>してから入れること。
 
 <ul>
-<li>以前のバージョンのgemを指したままになってる？</li>
+<li>古いruby-buildが入ってしまうと、最新のRubyをインストールできない。</li>
 </ul>
 </li>
+<li>RubyのビルドはXcodeのllvm-gccではダメなので、
+<a href="https://github.com/kennethreitz/osx-gcc-installer">osx-gcc-installer</a>
+でgccを入れる必要がある。</li>
+<li>rbenvを使う場合、RubyはOctopressの
+<code>.rbenv-version</code>とピッタリ同じバージョンを入れる必要がある。</li>
+<li><code>rbenv install 1.9.3-p194</code>で入れた後、<code>bundle install</code>の前に<code>rbenv rehash</code>を忘れないこと。</li>
 </ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>brew update
+</span><span class='line'>brew install rbenv
+</span><span class='line'>brew install ruby-build
+</span><span class='line'>rbenv install 1.9.3-p194
+</span><span class='line'>rbenv rehash
+</span><span class='line'>sudo gem update --system
+</span><span class='line'>sudo gem install bundler
+</span><span class='line'>sudo bundle install
+</span><span class='line'>rake install
+</span><span class='line'>rake setup_github_pages
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy
+</span><span class='line'>rake new_post<span class="o">[</span><span class="s2">&quot;Blog Title&quot;</span><span class="o">]</span>
+</span><span class='line'>rake preview
+</span><span class='line'>rake gen_deploy
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>これからOctopressやJekyllやGitHub Pagesの仕組みを勉強するつもり。
