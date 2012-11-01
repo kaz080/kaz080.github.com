@@ -4,7 +4,7 @@
   <title><![CDATA[kaz080 Blog]]></title>
   <link href="http://kaz080.github.com/atom.xml" rel="self"/>
   <link href="http://kaz080.github.com/"/>
-  <updated>2012-11-02T02:34:10+09:00</updated>
+  <updated>2012-11-02T02:37:10+09:00</updated>
   <id>http://kaz080.github.com/</id>
   <author>
     <name><![CDATA[kaz080]]></name>
@@ -56,11 +56,15 @@
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>brew update
 </span><span class='line'>brew install rbenv
 </span><span class='line'>brew install ruby-build
 </span><span class='line'>rbenv install 1.9.3-p194
 </span><span class='line'>rbenv rehash
+</span><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nb">cd </span>octopress
 </span><span class='line'>sudo gem update --system
 </span><span class='line'>sudo gem install bundler
 </span><span class='line'>sudo bundle install
