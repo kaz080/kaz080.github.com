@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[kaz080 Blog]]></title>
   <link href="http://kaz080.github.com/atom.xml" rel="self"/>
   <link href="http://kaz080.github.com/"/>
-  <updated>2012-11-01T23:51:13+09:00</updated>
+  <updated>2012-11-02T00:02:30+09:00</updated>
   <id>http://kaz080.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[kaz080]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Initial post]]></title>
+    <link href="http://kaz080.github.com/blog/2012/11/01/initial-post/"/>
+    <updated>2012-11-01T23:57:00+09:00</updated>
+    <id>http://kaz080.github.com/blog/2012/11/01/initial-post</id>
+    <content type="html"><![CDATA[<h1>Octpressを入れてみた</h1>
+
+<p>最新のOctopressはRubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。</p>
+
+<ul>
+<li>brew updateしてから入れること。</li>
+<li>rubyを入れるのにxcode gccを入れる必要がある。</li>
+<li>rbenvを使う場合、rubyのバージョンは、.rbenv-versionとピッタリ同じものを入れる必要がある？</li>
+<li>rbenv install 1.9.3-p194した後は、rbenv rehashを忘れないこと。</li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>
