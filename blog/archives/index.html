@@ -9,8 +9,8 @@
   <meta name="author" content="kaz080">
 
   
-  <meta name="description" content=" Blog Archive 2012 Octopressを入れてみた
-Nov 01 2012 Recent Posts Octopressを入れてみた ">
+  <meta name="description" content="Blog Archive 2012 Octopressを入れてみた
+Nov 01 2012 Recent Posts Octopressを入れてみた Latest Tweets Status updating... $.domReady(function(){ getTwitterFeed(" &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -106,6 +106,22 @@ Nov 01 2012 Recent Posts Octopressを入れてみた ">
   </ul>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("kaz080", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/kaz080" class="twitter-follow-button" data-show-count="true">Follow @kaz080</a>
+  
+</section>
 
 
 
