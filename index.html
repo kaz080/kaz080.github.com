@@ -10,8 +10,9 @@
 
   
   <meta name="description" content="最新のOctopressはRubyが1.9.3以上でないとエラーが出るようなので、rbenvで入れてみた。 brew updateしてから入れること。
-rubyをビルドするにはXcodeのllvm-gccではダメで、osx-gcc-installerでgcc入れる必要がある。
-rbenvを使う場合 &hellip;">
+rubyをビルドするにはXcodeのllvm-gccではダメで、
+osx-gcc-installer
+でgccを入れる必要がある。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -99,9 +100,12 @@ rbenvを使う場合 &hellip;">
 
 <ul>
 <li>brew updateしてから入れること。</li>
-<li>rubyをビルドするにはXcodeのllvm-gccではダメで、osx-gcc-installerでgcc入れる必要がある。</li>
-<li>rbenvを使う場合、rubyのバージョンは、.rbenv-versionとピッタリ同じものを入れる必要がある？</li>
-<li>&#8221;&#8217;rbenv install 1.9.3-p194&#8221;&#8217;で入れた後、rbenv rehashを忘れないこと。
+<li>rubyをビルドするにはXcodeのllvm-gccではダメで、
+<a href="https://github.com/kennethreitz/osx-gcc-installer">osx-gcc-installer</a>
+でgccを入れる必要がある。</li>
+<li>rbenvを使う場合、rubyのバージョンは、
+<code>.rbenv-version</code>とピッタリ同じものを入れる必要がある？</li>
+<li><code>rbenv install 1.9.3-p194</code>で入れた後、<code>rbenv rehash</code>を忘れないこと。
 
 <ul>
 <li>前のバージョンのgemを指したままになってる？</li>
@@ -136,35 +140,6 @@ rbenvを使う場合 &hellip;">
       </li>
     
   </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/kaz080">@kaz080</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'kaz080',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
